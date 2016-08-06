@@ -38,3 +38,18 @@ http://tutorial.djangogirls.org/en/
 Måske-ting
 
 Design-filosofi https://docs.djangoproject.com/en/1.10/misc/design-philosophies/#design-philosophies
+
+Cookiecutter
+
+Prototyping, protoduction
+
+
+
+Hvorfor vælge Django?
+
+ - Convention over configuration
+ - Batteries included (!= bloated)
+ - Python (3)
+ - Design philosophies
+ - Strong community
+

@@ -1,4 +1,4 @@
 # Django Workshop
 ## Bornhack 2016
-### Viðír Valberg Gudmondsson `@vvalberg`
+### Víðir Valberg Guðmundsson `@vvalberg`
 ### Benjamin Bach `@benjaoming`

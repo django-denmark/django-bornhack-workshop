@@ -1,11 +1,24 @@
 # Django Workshop
-## Bornhack 2016
-### Víðir Valberg Guðmundsson `@vvalberg`
+## #Bornhack 2016
+### Víðir Valberg Guðmundsson `@vvalbergg`
 ### Benjamin Bach `@benjaoming`
+### ...and You!
+---
 
+# @vvalbergg
+
+## Works at ShopGun.com
+## Been using Django since 2009
 
 ---
 
+# @benjaoming
+
+## Works at Learning Equality / Fair Allocation of Infotech Resources
+## Been using Django since 2007
+## maintains django-wiki, django-money and django-nyt
+
+---
 
 # RTFD
 
@@ -17,25 +30,29 @@ https://docs.djangoproject.com/en/1.10/intro/tutorial01/
 
 ---
 
-# Program\*
+# Program \*) \*\*)
 
  1. Blah blah theory (~20m)
- 2. Playbook: Enough talk (~30m)
- 3. Your own stuff (>1h)
+ 1. Enough talk: Example project (~30m)
+ 1. Your own stuff (>1h)
+    1. ...or hack bornhack.dk
+    1. ...or challenges for the example project
 
 \*) Remember: It's a crash course
 
 ---
 
+\*\*) You don't have to know everything about Django to use Django
+
+---
+
 # Framework ceasefire
 
-
 ||Cool language|App ecosystem|Awesome|
-|:-:|:-:|:-:|:-|
+|:-:|:-:|:-:|:-:|
 |***Django***|✓|✓|✓|
 |***Rails***|✓|✓|✓|
 |***Flask***|✓|✓|✓|
-
 
 ---
 
@@ -43,12 +60,22 @@ https://docs.djangoproject.com/en/1.10/intro/tutorial01/
 
  - Started at a US Newspaper (Lawrence Journal)
  - Released in 2005
+   - 100+ releases, 65 CVE bulletins
+   - LTS release cycle introduced
  - Important bullets:
    - Rapid development
    - Reusability and pluggability
    - Don't Repeat Yourself (DRY)
    - Convention over configuration (sane defaults)
    - Batteries included (!=bloat)
+
+---
+
+# Release roadmap
+
+![release roadmap](slides/release-roadmap.png)
+
+...and it's Python 2+3
 
 ---
 
@@ -85,10 +112,10 @@ Djangocph, DjangoGirls, DjangoCon US, DjangoCon Europe... and (kind of) ReadTheD
 
 ---
 
-# Key concepts
+# Terminology
 
  - Project
- - Application / App
+ - Application aka. "app"
 
 ---
 
@@ -277,6 +304,16 @@ Okay let's go...
 
 GitHub repo:
 https://github.com/djangocph/django-bornhack-workshop/
+
+---
+
+# Btw.
+
+Try out the Django shell
+
+```sh
+python manage.py shell
+``` 
 
 ---
 

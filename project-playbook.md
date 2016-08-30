@@ -4,6 +4,11 @@
 1. [Installing Django](#installing-django)
 1. [Start Django Project](#start-django-project)
 1. [Start Django App](#start-django-app)
+1. [Running a development server](#runserver)
+1. [](#)
+1. [](#)
+1. [](#)
+1. [](#)
 
 <h1 id="virtualenv">Virtual Environment</h1>
 
@@ -279,7 +284,7 @@ Django has a template language which is quite straight forward:
 
 <h1 id="hooking-up-urls">Hooking up URLs</h1>
 
-Every time a request comes in, the URL requested will be used to figure out which view to use. This mapping we call an URL Conf
+Every time a request comes in, the URL requested will be used to figure out which view to use. This mapping we call an URL Conf. The main URL conf is placed in `todo_project/urls.py`.
 
     from django.conf.urls import url
     from django.contrib import admin
@@ -288,6 +293,49 @@ Every time a request comes in, the URL requested will be used to figure out whic
         url(r'^$', views.todo_list, name='todo_list'),
         url(r'^admin/', admin.site.urls),
     ]
+    
+    
+<h1 id="creating-a-task">Creating a task</h1>
+
+To create a task we have to make some additions to our code:
+
+
+Update `todo/templates/task_list.html` like this (in the \<body\> tags):
+
+    <form method="POST">
+      {% csrf_token %}
+      <input type="text" name="content" />
+      <button type="submit">Add</button>
+    </form>
+
+    <hr />
+
+    <ul>
+    {% for task in tasks %}
+      <li>
+        {{ task.content }} -
+        {% if task.completed %}
+          Done!
+        {% else %}
+          <a href="">Mark as done</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+
+
+Update `views.py` like this:
+
+    def task_list(request, **kwargs):
+        if request.method == "POST":
+            task_content = request.POST['content']
+            new_task = models.Task(content=task_content)
+            new_task.save()
+            return redirect('task-list')
+
+        tasks = models.Task.objects.all()
+        context = {'tasks': tasks}
+        return render(request, 'task_list.html', context)
 
 
 <h1 id="">Marking a task as fixed</h1>
@@ -314,6 +362,13 @@ And then we add this view to the URL conf:
     
 And last we update the template to use this new URL when pressing the completion-link:
 
+    <form method="POST">
+      {% csrf_token %}
+      <input type="text" name="content" />
+      <button type="submit">Add</button>
+    </form>
+
+    <hr />
 
     <ul>
     {% for task in tasks %}
@@ -328,10 +383,13 @@ And last we update the template to use this new URL when pressing the completion
     {% endfor %}
     </ul>
     
-Here we are using the `{% url ... %}` template tag, which uses the names from the URLs to figure out what to link to.
 
+Here we are using the `{% url ... %}` template tag, which uses the names from the URLs to figure out what to link to.
 
 <h1 id="further-tasks">Further tasks</h1>
 
 - Separate completed and non-completed tasks (hint: use the QuerySet `.filter()` method)
+- Make it possible to delete tasks
 - Make it possible to mark already completed tasks as not completed.
+- Make it possible to update the content of tasks
+- Use Django forms

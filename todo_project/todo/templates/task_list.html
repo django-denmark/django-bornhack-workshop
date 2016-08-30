@@ -6,6 +6,15 @@
 </head>
 <body>
 
+<form method="POST">
+  {% csrf_token %}
+  <input type="text" name="content" />
+  <button type="submit">Add</button>
+</form>
+
+
+<hr />
+
 <ul>
 {% for task in tasks %}
   <li>

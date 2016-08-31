@@ -1,3 +1,5 @@
+<!-- $theme: default -->
+
 # Django Workshop
 ## #Bornhack 2016
 ### Víðir Valberg Guðmundsson `@vvalbergg`
@@ -317,6 +319,14 @@ python manage.py shell
 
 ---
 
+# So, for now...
+
+- Do your own Django project
+- Solve the tasks for `@vvalbergg`'s example project
+- Hack bornhack.dk
+
+---
+
 # Hack Bornhack.dk
 
 We encourage everyone to fork the site on Github and make PRs.
@@ -333,6 +343,16 @@ Quick-start:
 
 
 ---
+
+# Tasks for example project
+
+* Create a Delete View
+* Sort the TODOs so the oldest or latest appear first
+* Add a static file to the project (like a stylesheet, javascript, a logo)
+* Write an automated test
+
+---
+
 
 # Sign off
 

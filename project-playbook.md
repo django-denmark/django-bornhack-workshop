@@ -157,8 +157,7 @@ We can easily activate the admin editing `todo/admin.py` with the following cont
 
 <h1 id="create-an-admin-user">Create an Admin User</h1>
 
-    (venv) $ ./manage.py createuser
-    ./manage.py createsuperuser
+    (venv) $ ./manage.py createsuperuser
     Username (leave blank to use 'valberg'):
     Email address:
     Password:

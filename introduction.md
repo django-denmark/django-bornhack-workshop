@@ -1,7 +1,7 @@
 <!-- $theme: default -->
 
 # Django Workshop
-## #Bornhack 2016
+## #Bornhack 2018
 ### Víðir Valberg Guðmundsson `@vvalbergg`
 ### Benjamin Bach `@benjaoming`
 ### ...and You!
@@ -9,14 +9,14 @@
 
 # @vvalbergg
 
-## Works at ShopGun.com
+## Works at LetsGoFleetSystems.com
 ## Been using Django since 2009
 
 ---
 
 # @benjaoming
 
-## Works at Learning Equality / Fair Allocation of Infotech Resources
+## Works at [Learning Equality](https://learningequality.org) / [Fair Allocation of Infotech Resources](https://www.fairdanmark.dk)
 ## Been using Django since 2007
 ## maintains django-wiki, django-money and django-nyt
 
@@ -28,7 +28,7 @@ Django Girls tutorial:
 http://tutorial.djangogirls.org/en/
 
 Official docs tutorial 1:
-https://docs.djangoproject.com/en/1.10/intro/tutorial01/
+https://docs.djangoproject.com/en/2.1/intro/tutorial01/
 
 ---
 
@@ -37,8 +37,8 @@ https://docs.djangoproject.com/en/1.10/intro/tutorial01/
  1. Blah blah theory (~20m)
  1. Enough talk: Example project (~30m)
  1. Your own stuff (>1h)
-    1. ...or hack bornhack.dk
-    1. ...or challenges for the example project
+    1. ...hack bornhack.dk
+    1. ...or do your own thing
 
 \*) Remember: It's a crash course
 
@@ -85,7 +85,7 @@ https://docs.djangoproject.com/en/1.10/intro/tutorial01/
 
 Django scales.
 
-Pinterest, Instagram, Mozilla, The Washington Times, Disqus, bornhack.dk
+Disqus, Instagram, Knight Foundation, MacArthur Foundation, Mozilla, National Geographic, Open Knowledge Foundation, Pinterest, Open Stack, The Washington Times, bornhack.dk
 
 ---
 

@@ -76,7 +76,7 @@ https://docs.djangoproject.com/en/2.1/intro/tutorial01/
 
 ![release roadmap](slides/release-roadmap.png)
 
-...and it's Python 2+3
+...Django 2.0 drops Python 2!
 
 ---
 

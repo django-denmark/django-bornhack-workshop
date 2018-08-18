@@ -35,7 +35,6 @@ https://docs.djangoproject.com/en/2.1/intro/tutorial01/
 # Program \*) \*\*)
 
  1. Blah blah theory (~20m)
- 1. Enough talk: Example project (~30m)
  1. Your own stuff (>1h)
     1. ...hack bornhack.dk
     1. ...or do your own thing

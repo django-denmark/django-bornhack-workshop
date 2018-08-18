@@ -143,7 +143,7 @@ Djangocph, DjangoGirls, DjangoCon US, DjangoCon Europe... and (kind of) ReadTheD
 
 	➜  django-admin startproject example_project
     ➜  cd example_project
-    ➜  python manage.py runserver 
+    ➜  python manage.py runserver
     Performing system checks...
 
     System check identified no issues (0 silenced).
@@ -302,28 +302,20 @@ Okay let's go...
 
 ---
 
-# First hands-on: Playbook
-
-GitHub repo:
-https://github.com/djangocph/django-bornhack-workshop/
-
----
-
 # Btw.
 
 Try out the Django shell
 
 ```sh
 python manage.py shell
-``` 
+```
 
 ---
 
 # So, for now...
 
-- Do your own Django project
-- Solve the tasks for `@vvalbergg`'s example project
 - Hack bornhack.dk
+- Do your own project
 
 ---
 
@@ -332,32 +324,3 @@ python manage.py shell
 We encourage everyone to fork the site on Github and make PRs.
 
 https://github.com/bornhack/bornhack-website
-
-Quick-start:
-
-    git clone git@github.com:USERNAME/bornhack-website.git
-    virtualenv venv
-    source venv/bin/activate
-    pip install -r requirements/development.txt
-    USE_SQLITE=1 make
-
-
----
-
-# Tasks for example project
-
-* Create a Delete View
-* Sort the TODOs so the oldest or latest appear first
-* Add a static file to the project (like a stylesheet, javascript, a logo)
-* Write an automated test
-
----
-
-
-# Sign off
-
-If you like Django, join us in #djangocph (freenode) or AFK:
-http://www.meetup.com/The-Copenhagen-Django-Meetup-Group/
-
-Slides and examples on Github:
-https://github.com/djangocph/django-bornhack-workshop/
